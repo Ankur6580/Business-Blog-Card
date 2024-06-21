@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --bg-darkest: #111729;
+  --bg-lightest: #ffffff;
+  --bg-neutral-500: #677489;
+  --bg-neutral-100: #f2f5f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background-color: var(--bg-neutral-100);
+  color: var(--bg-neutral-500);
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  max-width: 418px;
+  background-color: var(--bg-lightest);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.wrapper {
+  max-width: 85%;
+  margin-inline: auto;
+  font-family: lato;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: poppins;
+  color: var(--bg-darkest);
+  letter-spacing: -1px;
+}
+
+.desc {
+  line-height: 1.5;
+  margin-block: 16px;
+}
+
+.footer {
+  padding-block: 25px;
+  border-top: 1px solid #f2f5f9;
+}
+
+.footer .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 43px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f2f5f9;
+}
+
+.name {
+  font-family: poppins;
+  font-weight: 500;
+  color: var(--bg-darkest);
+  font-size: 14px;
+}
+
+.designation {
+  font-size: 12px;
+}
